@@ -19,8 +19,14 @@ export class AuthenticatorComponent {
 
   onLogin(){
     if (
-      this.loginObj.username === 'Admin' &&
+      this.loginObj.email === 'Admin' &&
       this.loginObj.password === '123'
+      ||
+       this.loginObj.email === 'nathan' &&
+      this.loginObj.password === '321'
+      ||
+      this.loginObj.email === 'shaper' &&
+     this.loginObj.password === 'Letsdoit!'
     ){
       this.router.navigateByUrl('/home');
     }
